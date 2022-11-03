@@ -1,11 +1,11 @@
-package io.jexxa.jexxatemplate.domain.book;
+package io.jexxa.openapi.domain.book;
 
 import io.jexxa.addend.applicationcore.Aggregate;
 import io.jexxa.addend.applicationcore.AggregateFactory;
 import io.jexxa.addend.applicationcore.AggregateID;
 
-import static io.jexxa.jexxatemplate.domain.DomainEventPublisher.publish;
-import static io.jexxa.jexxatemplate.domain.book.BookSoldOut.bookSoldOut;
+import static io.jexxa.openapi.domain.DomainEventPublisher.publish;
+import static io.jexxa.openapi.domain.book.BookSoldOut.bookSoldOut;
 
 @Aggregate
 public final class Book

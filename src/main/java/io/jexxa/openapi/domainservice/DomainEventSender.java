@@ -1,8 +1,8 @@
-package io.jexxa.jexxatemplate.domainservice;
+package io.jexxa.openapi.domainservice;
 
 
 import io.jexxa.addend.applicationcore.InfrastructureService;
-import io.jexxa.jexxatemplate.domain.book.BookSoldOut;
+import io.jexxa.openapi.domain.book.BookSoldOut;
 
 @InfrastructureService
 public interface DomainEventSender

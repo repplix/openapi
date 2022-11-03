@@ -1,14 +1,14 @@
-package io.jexxa.jexxatemplate.applicationservice;
+package io.jexxa.openapi.applicationservice;
 
 import io.jexxa.addend.applicationcore.ApplicationService;
-import io.jexxa.jexxatemplate.domain.book.Book;
-import io.jexxa.jexxatemplate.domain.book.BookNotInStockException;
-import io.jexxa.jexxatemplate.domain.book.BookRepository;
-import io.jexxa.jexxatemplate.domain.book.ISBN13;
+import io.jexxa.openapi.domain.book.Book;
+import io.jexxa.openapi.domain.book.BookNotInStockException;
+import io.jexxa.openapi.domain.book.BookRepository;
+import io.jexxa.openapi.domain.book.ISBN13;
 
 import java.util.List;
 
-import static io.jexxa.jexxatemplate.domain.book.Book.newBook;
+import static io.jexxa.openapi.domain.book.Book.newBook;
 
 @SuppressWarnings("unused")
 @ApplicationService

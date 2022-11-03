@@ -1,10 +1,10 @@
-package io.jexxa.jexxatemplate.domainservice;
+package io.jexxa.openapi.domainservice;
 
 
 import io.jexxa.addend.applicationcore.DomainEventHandler;
 import io.jexxa.addend.applicationcore.DomainService;
-import io.jexxa.jexxatemplate.domain.DomainEventPublisher;
-import io.jexxa.jexxatemplate.domain.book.BookSoldOut;
+import io.jexxa.openapi.domain.DomainEventPublisher;
+import io.jexxa.openapi.domain.book.BookSoldOut;
 
 @DomainService
 public class DomainEventService

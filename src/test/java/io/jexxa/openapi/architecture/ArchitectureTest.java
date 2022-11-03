@@ -1,6 +1,6 @@
-package io.jexxa.jexxatemplate.architecture;
+package io.jexxa.openapi.architecture;
 
-import io.jexxa.jexxatemplate.JexxaTemplate;
+import io.jexxa.openapi.OpenAPI;
 import org.junit.jupiter.api.Test;
 
 import static io.jexxa.jexxatest.architecture.ArchitectureRules.aggregateRules;
@@ -19,7 +19,7 @@ class ArchitectureTest {
     @Test
     void validatePortsAndAdapters()
     {
-        portsAndAdapters(JexxaTemplate.class)
+        portsAndAdapters(OpenAPI.class)
                 // Add all packages providing driven adapter
                 .addDrivenAdapterPackage("persistence")
                 .addDrivenAdapterPackage("messaging")
@@ -33,12 +33,12 @@ class ArchitectureTest {
     @Test
     void validatePatternLanguage()
     {
-        patternLanguage(JexxaTemplate.class).validate();
+        patternLanguage(OpenAPI.class).validate();
     }
 
     @Test
     void validateAggregateRules()
     {
-        aggregateRules(JexxaTemplate.class).validate();
+        aggregateRules(OpenAPI.class).validate();
     }
 }

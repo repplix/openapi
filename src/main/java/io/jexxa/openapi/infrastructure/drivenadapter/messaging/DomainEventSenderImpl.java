@@ -1,9 +1,9 @@
-package io.jexxa.jexxatemplate.infrastructure.drivenadapter.messaging;
+package io.jexxa.openapi.infrastructure.drivenadapter.messaging;
 
 import io.jexxa.addend.infrastructure.DrivenAdapter;
 import io.jexxa.infrastructure.drivenadapterstrategy.messaging.MessageSender;
-import io.jexxa.jexxatemplate.domain.book.BookSoldOut;
-import io.jexxa.jexxatemplate.domainservice.DomainEventSender;
+import io.jexxa.openapi.domain.book.BookSoldOut;
+import io.jexxa.openapi.domainservice.DomainEventSender;
 
 import java.util.Objects;
 import java.util.Properties;

@@ -1,20 +1,20 @@
-package io.jexxa.jexxatemplate.applicationservice;
+package io.jexxa.openapi.applicationservice;
 
 import io.jexxa.addend.applicationcore.DomainService;
-import io.jexxa.jexxatemplate.JexxaTemplate;
-import io.jexxa.jexxatemplate.domain.book.BookNotInStockException;
-import io.jexxa.jexxatemplate.domain.book.BookRepository;
-import io.jexxa.jexxatemplate.domain.book.BookSoldOut;
-import io.jexxa.jexxatemplate.domain.book.ISBN13;
-import io.jexxa.jexxatemplate.domainservice.DomainEventSender;
+import io.jexxa.openapi.OpenAPI;
+import io.jexxa.openapi.domain.book.BookNotInStockException;
+import io.jexxa.openapi.domain.book.BookRepository;
+import io.jexxa.openapi.domain.book.BookSoldOut;
+import io.jexxa.openapi.domain.book.ISBN13;
+import io.jexxa.openapi.domainservice.DomainEventSender;
 import io.jexxa.jexxatest.JexxaTest;
 import io.jexxa.jexxatest.infrastructure.drivenadapterstrategy.messaging.recording.MessageRecorder;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static io.jexxa.jexxatemplate.domain.book.BookSoldOut.bookSoldOut;
-import static io.jexxa.jexxatemplate.domain.book.ISBN13.createISBN;
+import static io.jexxa.openapi.domain.book.BookSoldOut.bookSoldOut;
+import static io.jexxa.openapi.domain.book.ISBN13.createISBN;
 import static io.jexxa.jexxatest.JexxaTest.getJexxaTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -35,7 +35,7 @@ class BookStoreServiceTest
     {
         // JexxaTest is created for each test. It provides stubs for running your tests so that no
         // mock framework is required. It expects the class name your application!
-        JexxaTest jexxaTest = getJexxaTest(JexxaTemplate.class);
+        JexxaTest jexxaTest = getJexxaTest(OpenAPI.class);
 
         // Request the objects needed for our tests
         objectUnderTest       = jexxaTest.getInstanceOfPort(BookStoreService.class);   // 1. We need the object we want to test

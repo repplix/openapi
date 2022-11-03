@@ -1,15 +1,15 @@
-package io.jexxa.jexxatemplate;
+package io.jexxa.openapi;
 
 import io.jexxa.addend.applicationcore.ApplicationService;
 import io.jexxa.addend.applicationcore.DomainService;
 import io.jexxa.core.JexxaMain;
 import io.jexxa.infrastructure.drivingadapter.rest.RESTfulRPCAdapter;
 
-public final class JexxaTemplate
+public final class OpenAPI
 {
     public static void main(String[] args)
     {
-        var jexxaMain = new JexxaMain(JexxaTemplate.class);
+        var jexxaMain = new JexxaMain(OpenAPI.class);
 
         jexxaMain
                 // Bootstrap all classes annotated with @DomainService. In this application this causes to get
@@ -24,7 +24,7 @@ public final class JexxaTemplate
                 .run();
     }
 
-    private JexxaTemplate()
+    private OpenAPI()
     {
         //Private constructor since we only offer main
     }

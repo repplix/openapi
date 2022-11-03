@@ -1,6 +1,6 @@
-package io.jexxa.jexxatemplate.integration.applicationservice;
+package io.jexxa.openapi.integration.applicationservice;
 
-import io.jexxa.jexxatemplate.JexxaTemplate;
+import io.jexxa.openapi.OpenAPI;
 import kong.unirest.Unirest;
 import kong.unirest.UnirestException;
 import org.junit.jupiter.api.AfterAll;
@@ -16,14 +16,14 @@ import static kong.unirest.HeaderNames.CONTENT_TYPE;
 import static org.awaitility.Awaitility.await;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JexxaTemplateIT
+class OpenAPIIT
 {
     static private String restPath;
 
     @BeforeEach
     void initBeforeEach()
     {
-        var jexxaTest = getJexxaTest(JexxaTemplate.class);
+        var jexxaTest = getJexxaTest(OpenAPI.class);
 
         restPath = "http://localhost:" + jexxaTest.getProperties().getProperty(JEXXA_REST_PORT);
 
@@ -31,7 +31,7 @@ class JexxaTemplateIT
         await().atMost(10, TimeUnit.SECONDS)
                 .pollDelay(100, TimeUnit.MILLISECONDS)
                 .ignoreException(UnirestException.class)
-                .until(JexxaTemplateIT::contextIsRunning);
+                .until(OpenAPIIT::contextIsRunning);
 
     }
 
@@ -49,7 +49,7 @@ class JexxaTemplateIT
                 .getBody();
 
         //Assert
-        assertEquals(JexxaTemplate.class.getSimpleName(), result);
+        assertEquals(OpenAPI.class.getSimpleName(), result);
     }
 
 

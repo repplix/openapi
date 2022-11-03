@@ -1,11 +1,11 @@
-package io.jexxa.jexxatemplate.infrastructure.drivenadapter.persistence;
+package io.jexxa.openapi.infrastructure.drivenadapter.persistence;
 
 
 import io.jexxa.addend.infrastructure.DrivenAdapter;
 import io.jexxa.infrastructure.drivenadapterstrategy.persistence.repository.IRepository;
-import io.jexxa.jexxatemplate.domain.book.Book;
-import io.jexxa.jexxatemplate.domain.book.ISBN13;
-import io.jexxa.jexxatemplate.domain.book.BookRepository;
+import io.jexxa.openapi.domain.book.Book;
+import io.jexxa.openapi.domain.book.ISBN13;
+import io.jexxa.openapi.domain.book.BookRepository;
 
 import java.util.List;
 import java.util.Optional;

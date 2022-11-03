@@ -1,4 +1,4 @@
-package io.jexxa.jexxatemplate.domain;
+package io.jexxa.openapi.domain;
 
 import io.jexxa.addend.applicationcore.Observer;
 
