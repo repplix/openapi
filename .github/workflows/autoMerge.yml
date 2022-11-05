@@ -11,6 +11,8 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  repository-projects: write
+  actions: write
 
 jobs:
   merge-me:
