@@ -8,7 +8,7 @@ on:
       - 'Maven Test Build'
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 jobs:
