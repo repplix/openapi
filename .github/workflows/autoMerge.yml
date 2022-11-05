@@ -7,6 +7,10 @@ on:
     workflows:
       - 'Maven Test Build'
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   merge-me:
     name: Merge me!
@@ -18,5 +22,5 @@ jobs:
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         uses: ridedott/merge-me-action@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.MERGE_ME_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PRESET: DEPENDABOT_MINOR
