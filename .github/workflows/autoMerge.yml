@@ -1,6 +1,7 @@
 name: Merge me!
 
 on:
+  workflow_dispatch:
   workflow_run:
     types:
       - completed
